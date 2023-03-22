@@ -34,7 +34,7 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "./node_modules/place-my-order-assets/images/",
+                "input": "./node_modules/flights-assets/images/",
                 "output": "./assets/images"
               }
             ],

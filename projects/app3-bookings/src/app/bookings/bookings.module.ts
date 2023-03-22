@@ -10,7 +10,7 @@ const routes: Routes = [
     component: BookingsComponent
   },
   {
-    path: ':slug/order',
+    path: ':slug/flights',
     component: FlightsComponent,
   }
 ];

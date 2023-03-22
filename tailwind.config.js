@@ -39,8 +39,8 @@ module.exports = {
     enabled: true,
     content: [
       './src/**/*.{html,ts}',
-      './projects/app2-restaurant/src/**/*.{html,ts}',
-      './projects/app3-orders/src/**/*.{html,ts}'
+      './projects/app2-flights/src/**/*.{html,ts}',
+      './projects/app3-bookings/src/**/*.{html,ts}'
     ]
   }
 };

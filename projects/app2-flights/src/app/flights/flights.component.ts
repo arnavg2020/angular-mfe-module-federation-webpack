@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'pmo-order',
-  templateUrl: './order.component.html',
-  styleUrls: ['./order.component.less']
+  selector: 'pmo-flights',
+  templateUrl: './flights.component.html',
+  styleUrls: ['./flights.component.less']
 })
 export class FlightsComponent implements OnInit {
 
