@@ -3,13 +3,19 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start:app1": "ng serve",
+    "start:app2": "ng serve app2-flights",
+    "start:app3": "ng serve app3-bookings",
+    "build:app1": "ng build",
+    "build:app2": "ng build app2-flights",
+    "build:app3": "ng build app3-bookings",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:all": "npm run start:app1 & npm run start:app2 & npm run start:app3"
   },
   "private": true,
   "dependencies": {
+    "@angular-builders/custom-webpack": "^13.1.0",
     "@angular/animations": "~13.2.2",
     "@angular/common": "~13.2.2",
     "@angular/compiler": "~13.2.2",
@@ -25,7 +31,6 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-builders/custom-webpack": "^15.0.0",
     "@angular-devkit/build-angular": "~13.2.3",
     "@angular/cli": "~13.2.3",
     "@angular/compiler-cli": "~13.2.2",
