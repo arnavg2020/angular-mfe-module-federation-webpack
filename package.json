@@ -11,7 +11,8 @@
     "build:app3": "ng build app3-bookings",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start:all": "npm run start:app1 & npm run start:app2 & npm run start:app3"
+    "start:all": "npm run start:app1 & npm run start:app2 & npm run start:app3",
+    "build:util-lib": "ng build utils"
   },
   "private": true,
   "dependencies": {

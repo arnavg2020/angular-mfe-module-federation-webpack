@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CoreModule} from "./core/core.module";
 import {ReactiveFormsModule} from "@angular/forms";
+import { UtilsModule } from 'projects/utils/src/public-api';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    CoreModule
+    CoreModule,
+    UtilsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
