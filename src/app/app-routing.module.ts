@@ -11,22 +11,22 @@ const routes: Routes = [
 	loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
   },
   {
-    path: 'restaurants',
+    path: 'flights',
 	loadChildren: () => mef.loadRemoteFile({
-	  remoteName: "restaurant",
+	  remoteName: "flights",
 	  remoteEntry: `http://localhost:4204/remoteFlights.js`,
-	  exposedFile: "RestaurantModule",
+	  exposedFile: "FlightsModule",
 	  exposeFileType: FileType.Module
-    }).then((m) => m.RestaurantModule),
+    }).then((m) => m.FlightsModule),
   },
   {
-    path: 'order',
+    path: 'bookings',
 	loadChildren: () => mef.loadRemoteFile({
-	  remoteName: "orders",
+	  remoteName: "bookings",
 	  remoteEntry: `http://localhost:4205/remoteBookings.js`,
-	  exposedFile: "OrderModule",
+	  exposedFile: "BookingsModule",
 	  exposeFileType: FileType.Module
-	}).then((m) => m.OrderModule),
+	}).then((m) => m.BookingsModule),
   },
 ];
 
